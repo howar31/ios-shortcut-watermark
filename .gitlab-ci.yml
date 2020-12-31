@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - ls -la
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
+  except:
+    - schedules
